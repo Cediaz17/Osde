@@ -1,0 +1,426 @@
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+.navegador li {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin: 15px;
+    width: auto;
+    height: 42px;
+    color: #00548E;
+    font-family: 'MuseoSans300'!important;
+    font-size: 18px;
+    line-height: 15px;
+}
+.navegador li a 
+{
+    position: relative;
+    display: block;
+    height: 20px;
+    color: #777777;
+    font-size: 23px;
+    line-height: 20px;
+    padding: 31px 25px !important;
+    border-right: none;
+    font-family: MuseoSans500;
+    letter-spacing: -0.4px;
+}
+.home{
+    background-color: #f0f4f5;
+}
+.quienesSomos
+{
+    padding-top: 16vh;
+}
+.quienesSomos_Img
+{
+    background-image: url(img/home01.jpg);
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+    display: inline-flex;
+    align-items: start;
+    height: 100vh;
+    width: 100%;
+    max-height: 600px;
+    z-index: -1;
+    position: relative;
+}
+.tituloQuienesSomos
+{
+    color: #1226aa;
+    font-family: 'MuseoSans300';
+    font-size: 45px;
+    line-height: 26px;
+    margin-bottom: 18px;
+    font-weight: normal;
+    margin-left: 17px;
+    text-shadow: 0 0 black;
+}
+.quienesSomos_Parafo
+{
+    line-height: 1;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+.quienesSomos_Parafo p
+{
+    font-size: 21px;
+}
+.contenedorInfo
+{
+    width: 100vw;
+}
+.contenedorInfo_Recuadro
+{
+    border: 25px solid transparent
+}
+.contenedorInfo_bloque
+{
+    border-radius: 7px ;
+    box-shadow: rgb(0 59 113 / 17%) 0px 2px 5px 0px;
+    background-color: #f0f4f5;
+    margin-bottom: 16px;
+    padding-top: 15px;
+    height: 22vh;
+    width: 25vw;
+    text-align: center;
+}
+.contenedorInfo_bloque_titulo
+{
+    font-family: 'MuseoSans500', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    color: #004c78;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+/*///////////////////////////////////////////////////////////////*/
+.infoAlSocio_fondo
+{
+    background-image: url(img/M__S-OSDE.jpg);
+    height: 80vh;
+    width: 45vw;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.infoAlSocio_fondogrey
+{
+    background: #003b71;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    border-radius: 1px;
+    height: 80vh;
+    flex-grow: 1;
+}
+.infoAlSocio_Card
+{
+    background-color: rgba(6,32,57,0.3) !important;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 45px;
+    text-shadow: 1px 1px 10px #05192d;
+}
+.infoAlSocio_fondogrey h2
+{
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    color:white;
+    margin: 5px;
+    margin-top: 10px;
+}
+.infoAlSocio_botones
+{
+    margin: 10px;
+    text-align: center;
+
+}
+.infoAlSocio_botones p button 
+{
+    background-color: #003b71;
+    border-color: #ffff;
+    width: 160px;
+    margin: 15px;
+}
+.riesgo
+{
+    color: #cf4628;
+}
+.atencion
+{
+    color: #01ACDC;
+}
+.asistencia
+{
+    color: #01dc67;
+}
+.tel-contacto-wp
+{
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+}
+.sectorBotones
+{
+    --bs-gutter-x: 0.5rem;
+}
+/*///////////////////////////////////////////////////////////////*/
+.inicio_Titulo
+{
+    text-align: center;
+    color: #1226aa;
+    margin: 10px;
+}
+.cabeceraOsde
+{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    width: 90%;
+    min-width: 1025px;
+    max-width: 2000px;
+    overflow: hidden;
+}
+.inicio_Subtitulo
+{
+    text-align: center;
+}
+#inicio_Subtitulo-parrafo
+{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+.cotizacion
+{
+    visibility: hidden;
+}
+.cotizacion p
+{   
+    margin: 30px;
+    font-size: 20px;
+}
+/* bootstrap*/
+
+.logo
+{ 
+        background: url(/img/logo.svg) no-repeat transparent scroll;
+        position: relative;
+        display: block;
+        float: left;
+        margin: 10px;
+        width: 14%;
+        min-width: 145px;
+        max-width: 160px;
+        height: 80px;
+        z-index: 2;
+}
+.contratarOsde
+{
+    margin-bottom: 1rem;
+    background-color: #f0f4f5;
+}
+#grupoFamiliar
+{
+    margin-top: 1rem;
+    visibility: hidden;
+    background-color: #ffff;
+    color: #1226aa;
+    text-align: center;
+}
+.imagenForm
+{
+    background-image: url(/img/descontar-tus-aportes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 4px #697482;
+}
+.inicio-formulario
+{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
+.formularioDisenio
+{
+    border: solid 4px #697482;
+    margin: 0 auto;
+    width: 90%;
+    color: #fff;
+    background-color: #003b71;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+}
+.formularioDisenioExtra
+{
+    border: solid 4px #ced6d5;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #003b71;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+/********************* campanias*************************/
+.campanias{
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.campaniaBoton
+{
+    position: relative;
+}
+.campaniaImagen
+{
+    width: 100%;
+    height: 25%;
+    margin-top: 1rem;
+}
+.campaniaYplanes
+{
+    background: -webkit-linear-gradient(left, #3fa0ec 0%,#9abbd6 71%,#2a456b 100%);
+    height: 100%;
+    width: 100%;
+}
+.planes
+{
+    margin-top: 1rem;
+}
+.planTitulo
+{
+    margin: 15px;
+    font-size: 40px;
+}
+.plan 
+{
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgb(136 166 173 / 40%);
+    padding: 15px;
+    border: solid 2px #2a456b;
+    margin: 10px;
+}
+.cabeceraPlan
+{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    background-color: #00aad2;
+    font-size: 25px;
+    color: white;
+}
+.cuerpoPlan
+{
+    padding: 15px 20px;
+    font-size: 18px;
+    background: #fff;
+}
+.itemsPlan
+{
+    height: 23vh;
+}
+
+/* FOOTER*/
+.titulo_footer_color_verdana{
+    color: #BE201F;
+    font-family: Verdana;
+}
+.contenedorFooter{
+    background:  #1226aa;
+}
+
+.contenedorFooter__Linkedin
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedorFooter__Linkedin a
+{
+            margin-top: 1rem;
+        color: #cccccc;
+}
+.contenedorFooter__Linkedin span
+{
+    color: #cccccc;
+}
+.contenedorFooter__Redes-Linkedin
+{
+    width: 65px;
+    height: 35px;
+    margin: 2px;
+}
+.contenedorFooter__Redes
+{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    flex-flow: nowrap;
+}
+.contenedorFooter__Redes__Disenio
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    padding-top: 20px;
+    height: 120px;
+    width: 300px;
+}
+.contenedorFooter__Redes__text
+        {
+            font-size: 15px;
+            color: aliceblue;
+        }
+.contenedorFooter__contenido
+{
+    justify-content: center;
+    align-items: center;
+}
+.contenedorFooter__seccion
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+}
+.contenedorFooter__logo
+{
+    width: 60%;
+}
+.contenedorFooter__imgLogo
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+.twitterLogo {
+    content: url(img/twitter.png);
+}
+.facebookLogo {
+    content: url(img/facebook.png);
+}
+.instagramLogo {
+    content: url(img/instagram.png);
+}
+.linkedinLogo {
+    content: url(img/linkedin.png);
+}
+

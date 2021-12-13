@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png.icon" href="img/osde-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>OSDE - Elegí con Libertad</title>
+</head>
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="cabeceraOsde">
+                <div class="logo">
+                    <a href=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegador" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">¿Por qué Nosotros?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Información al Socio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quiero ser Socio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Campañas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">COVID - 19</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario Vacunación</a></li>
+                            <li><a class="dropdown-item" href="#">Nuestros Planes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Home y Quienes SOMOS -->
+    <div class="quienesSomos container-fluid">
+        <div class="quienesSomos_Img">
+            <div class="quienesSomos_Parafo">
+                <h2 class="tituloQuienesSomos">
+                    Elegí con libertad lo mejor para tu salud
+                </h2>
+                <p>
+                    OSDE, la primera red de servicios médicos asistenciales de Argentina
+                </p>
+                <p>
+                    Con el objetivo de generar un vínculo ideal, OSDE cuenta con un programa de planes abiertos que brinda acceso directo al mejor servicio de salud con sólo presentar la credencial y el DNI. Vos decidís dónde y con quién atenderte, en el momento que lo necesites. 
+                </p>
+            </div>
+        </div>
+        <div class="container contenedorInfo" >
+            <div class="row">
+                <div class="col-4 contenedorInfo_Recuadro">
+                    <div class="contenedorInfo_bloque">
+                        <h3 class="contenedorInfo_bloque_titulo">
+                            Vocación de Respuesta
+                        </h3>
+                        “Dar una respuesta siempre, eficaz, ágil y personalizada”
+                        Nuestra fuerte vocación de servicio nos hace dar siempre una respuesta a nuestros socios. La mejor posible: eficaz, ágil y personalizada.
+                    </div>
+                </div>
+                <div class="col-4 contenedorInfo_Recuadro">
+                    <div class="contenedorInfo_bloque">
+                        <h3 class="contenedorInfo_bloque_titulo">
+                            Cartilla Médica
+                        </h3>
+                        Contamos con la cartilla médica mas amplia del pais; Más de 121.900 profesionales de todas las especialidades, sanatorios y clinicas de primer nivel.
+                    </div>
+                </div>
+                <div class="col-4 contenedorInfo_Recuadro">
+                    <div class="contenedorInfo_bloque">
+                        <h3 class="contenedorInfo_bloque_titulo">
+                            Estamos en todo el Pais
+                        </h3>
+                        Contamos con 37 Filiales ubicadas estratégicamente por todo el país, y en más de 380 Centros de Atención Personalizada situados en diversas localidades. De este modo se le brinda cobertura a más de <strong>2 millones de socios.</strong> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Desplegables informacion al Socio -->
+    <div class="infoAlSocio container-fluid"> 
+        <div>
+            <div class="row">
+                <div class="col-6 infoAlSocio_fondo"> 
+                </div>
+                <div class="col-6 infoAlSocio_fondogrey">
+                    <h2>Informacion para el Socio</h2>
+                    <div class="row infoAlSocio_botones">
+                        <p>
+                            <button class="btn btn-primary" type="button" id="sucursales">
+                                Sucursales
+                            </button>
+                            <button class="btn btn-primary" type="button" id="numerosUtiles">
+                                Numeros Utiles
+                            </button>
+                            <button class="btn btn-primary" type="button" id="formasPagos">
+                                Formas de Pago
+                            </button>
+                            <button class="btn btn-primary" type="button" id="planesMostrar">
+                                Planes
+                            </button>
+                        </p>
+                        <div class="row sectorBotones" id="informacionSocios">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Formulario de Contrato OSDE-->
+    <div class="contratarOsde container-fluid">
+        <h1 class="inicio_Titulo">En Osde tenemos un plan para vos.</h1>
+        <div class="container-fluid inicio-formulario">
+            <div class="row">
+                <div class="col-6">
+                    <form id="formulario" class="formularioDisenio">
+                        <p>
+                            Te invitamos a simular tu cuota y a conocer la cobertura de nuestros planes.
+                        </p>
+                        <div class="mb-3">
+                            <div id="name" class="form-text"></div>
+                            <label for="iNombre" class="form-label">Nombre y Apellido</label>
+                            <input type="text" required="true" class="form-control" id="iNombre" aria-describedby="iNombre">
+                        </div>
+                        <div class="mb-3">
+                            <div id="email" class="form-text"></div>
+                            <label for="iEmail" class="form-label">Email</label>
+                            <input type="email" required="true" class="form-control" id="iEmail" aria-describedby="iEmail">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text"></div>
+                            <label for="iEdad" class="form-label">Edad</label>
+                            <input type="number" required="true" step="1" min="18" class="form-control" id="iEdad">
+                        </div>
+                        <div class="mb-3">
+                            <select id="plan" class="form-select form-select-sm" required="true" aria-label=".form-select-sm example">
+                                <option selected>Elegí el plan que se ajusta a vos.</option>
+                                <option value="510">510</option>
+                                <option value="410">410</option>
+                                <option value="310">310</option>
+                                <option value="210">210</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="trabajo" class="form-label">Trabajo</label>
+                            <select id="trabajo" class="form-select form-select-sm" required="true" aria-label=".form-select-sm example">
+                                <option selected></option>
+                                <option value="2">En Relación de Dependencia.</option>
+                                <option value="3">Como Monotributista</option>
+                                <option value="4">Como Particular</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">¿Querés que te contactemos por WhatsApp?</label>
+                        </div>
+                        <div class="container row">
+                            <div class="col-md-4">
+                                <button id="btnContinuar"type="submit" class="btn btn-primary" >Cotizar</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="agregarPersona" type="button" class="btn btn-primary" >Agregar Persona</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="eliminarPersona" type="button" class="btn btn-primary" >Eliminar Persona</button>
+                                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 imagenForm">
+                </div>
+            </div>
+            <div class="col-6 " id="grupoFamiliar">                
+            </div>
+        </div>
+        <div id="resultado" class="cotizacion">
+        </div>
+        <div id="listadoGrupo" class="cotizacion">
+        </div>
+    </div>
+    <!--Sector de Noticias y Planes  -->
+    <div class="campaniaYplanes">
+        <div class="container-fluid">
+            <div class="row campanias">
+                <h2 class="planTitulo">Descubrí Más de OSDE</h2>
+                <div class="card  col-4" style="width: 20rem;">
+                    <div class="campaniaImagen">
+                        <img src="img/uso-credencial-digital-osde-prestadores.png" class="card-img-top" style="width: 100%; height: 100%;" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Solicitá la Credencial Digital OSDE para registrar la atención
+                    </h5>
+                    <p class="card-text">Nuestros socios pueden mostrarla desde su celular junto con el documento de identidad en consultorios y centros de salud. Te contamos todo lo que necesitás saber para utilizarla de forma correcta.</p>
+                    <div class="campaniaBoton">
+                        <a href="https://www.osde.com.ar/novedades/transacciones-atencion-medica-credencial-digital-osde-22876.html" class="btn btn-primary">Ver Mas</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card  col-4" style="width: 20rem;">
+                    <div class="campaniaImagen">
+                    <img src="img/videoconsultanota.jpg" class="card-img-top" style="width: 100%; height: 100%;" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title"> Ahora podés elegir la modalidad en la que querés realizar tus consultas
+                    </h5>
+                    <p class="card-text">Sumamos una nueva funcionalidad a la cartilla digital para que puedas seleccionar cómo querés acceder a la atención con un profesional de tu plan: en forma virtual o presencial.
+                    </p>
+                    <div class="campaniaBoton">
+                        <a href="https://www.osde.com.ar/novedades/elegir-modalidad-atencion-medica-virtual-presencial-12731.html" class="btn btn-primary">Ver Mas</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card col-4" style="width: 20rem;">
+                    <div class="campaniaImagen">
+                    <img src="img/videoconsulta-coronavirus.jpg" style="width: 100%; height: 100%;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Si presentás estos síntomas, podés acceder a nuestra     Consulta Médica Online
+                        </h5>
+                        <p class="card-text">Desde marzo los socios de todos nuestros planes que presenten síntomas de COVID-19 cuentan con la posibilidad de comunicarse con un médico desde su casa.
+                        </p>
+                        <div class="campaniaBoton">
+                        <a href="https://www.osde.com.ar/novedades/sintomas-de-coronavirus-consulta-medica-online-12396.html" class="btn btn-primary">Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  col-4" style="width: 20rem;">
+                    <div class="campaniaImagen">
+                        <img src="img/monitoreo-domiciliario-nota-portada.jpg" class="card-img-top" style="width: 100%; height: 100%;" alt="...">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Monitoreo Domiciliario: nuestra app para realizar el seguimiento de los pacientes de Urgencias
+                    </h5>
+                    <p class="card-text">Te contamos cómo es el circuito de atención médica y de monitoreo de los síntomas de pacientes que presentan fiebre o afecciones respiratorias.</p>
+                    <div class="campaniaBoton">
+                        <a href="https://www.osde.com.ar/novedades/monitoreo-domiciliario-seguimiento-pacientes-urgencias-22901.html" class="btn btn-primary">Ver Mas</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid planes">
+            <div class="row" style="justify-content: space-evenly;">
+                <h2 class="planTitulo">Nuestros Planes</h2>
+                <div class="col-3 plan">
+                    <div class="cabeceraPlan">
+                        OSDE 210
+                    </div>
+                    <div class="cuerpoPlan">
+                        <div class="itemsPlan">
+                            Incluye:
+                            <ul>
+                                <li>Emergencias las 24hs</li>
+                                <li>Consultas Medicas y Odontologia General</li>
+                                <li>Internacion en Habitacion Indivdual</li>
+                            </ul>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-primary"> Quiero Saber Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 plan">
+                    <div class="cabeceraPlan" style="background-color: #2bc2d0;">
+                        OSDE 310
+                    </div>
+                    <div class="cuerpoPlan">
+                        <div class="itemsPlan">
+                            Incluye:
+                            <ul>
+                                <li>Emergencias las 24hs</li>
+                                <li>Consultas Medicas y Odontologia General</li>
+                                <li>Internacion en Habitacion Indivdual</li>
+                            </ul>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-primary"> Quiero Saber Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 plan">
+                    <div class="cabeceraPlan" style="background-color: #999bb0;">
+                        OSDE 410
+                    </div>
+                    <div class="cuerpoPlan">
+                        <div class="itemsPlan">
+                            Incluye:
+                            <ul>
+                                <li>Emergencias las 24hs</li>
+                                <li>Consultas Medicas y Odontologia General</li>
+                                <li>Internacion en Habitacion Indivdual</li>
+                            </ul>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-primary"> Quiero Saber Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid planes">
+            <div class="row" style="justify-content: space-evenly;">
+                <div class="col-3 plan">
+                    <div class="cabeceraPlan" style="background-color: #697482;">
+                        OSDE 450
+                    </div>
+                    <div class="cuerpoPlan">
+                        <div class="itemsPlan">
+                            Incluye:
+                            <ul>
+                                <li>Emergencias las 24hs</li>
+                                <li>Consultas Medicas y Odontologia General</li>
+                                <li>Internacion en Habitacion Indivdual</li>
+                            </ul>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-primary"> Quiero Saber Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 plan">
+                    <div class="cabeceraPlan" style="background-color: #b39229;">
+                        OSDE 510
+                    </div>
+                    <div class="cuerpoPlan">
+                        <div class="itemsPlan">
+                            Incluye:
+                            <ul>
+                                <li>Emergencias las 24hs</li>
+                                <li>Consultas Medicas y Odontologia General</li>
+                                <li>Internacion en Habitacion Indivdual</li>
+                            </ul>
+                                <div style="text-align: center;">
+                                    <button class="btn btn-primary"> Quiero Saber Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Ventanas Emergentes de Mensajes -->
+        <div id="mensajeError">
+        </div>
+        <div class="modal" tabindex="-1" id="modalCargando">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Elegí con Libertad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Estamos calculando la mejor cotización para vos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="contenedorFooter">
+        <div class="container">
+            <div class="contenedorFooter__contenido row">
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="contenedorFooter__logo">
+                        <img src="img/logo_w.svg" alt="Logo" class="contenendorFooter__imgLogo img-fluid">
+                    </div>
+                </section>
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="container">
+                        <div class="contenedorFooter__Linkedin contenedorFooter__contenido row">
+                            <div>
+                                <span>Sitio Web Creado Por Cecilia Diaz ® </span>
+                                <a href="https://www.linkedin.com/in/cecilia-diaz-890a62159/" target="_blank">
+                            </div>
+                            <div class="contenedorFooter__Redes-Linkedin">
+                                    <img class="linkedinLogo img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="contenedorFooter__Linkedin">
+                                <a href="mapa_sitio.html">Mapa de Sitio</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="contenedorFooter__Redes__Disenio animate__animated animate__pulse wow bounceInUp">
+                        <h3 class="contenedorFooter__Redes__text">Seguinos en nuestra redes</h3>
+                        <section class="container-fluid">
+                            <div class="row contenedorFooter__Redes contenedorFooter__contenido">
+                                <div>
+                                    <a href="https://es-la.facebook.com/" target="_blank"><img  class="facebookLogo img-fluid" alt="Logo Fb"></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img alt="Logo Ig" class="instagramLogo img-fluid"></a>
+                                </div>
+                                <div>
+                                    <a href="https://twitter.com/?lang=es" target="_blank"><img alt="Logo Tw" class="twitterLogo img-fluid"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="const.js"></script>
+    <script src="simuladorInteractivo.js"></script>
+</body>
+</html>
