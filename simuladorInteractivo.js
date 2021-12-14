@@ -15,9 +15,10 @@ class Presupuesto {
         this.trabajoTitular=trabajoTitular;
     }
     valor() {   
-        var valorPlan = valorBasico (this.tipoPlan);
+        var valorPlan = valorBasico(this.tipoPlan);
+        debugger
         //obtenemos la cantidad de personas que componen el grupo familiar//
-        valorPlan= valorPlan*(this.grupoFamiliar.length);
+        valorPlan= valorPlan*(this.grupoFamiliar.length + 1);
         valorPlan= valorTotal(valorPlan);
         return valorPlan;
     }      
@@ -79,8 +80,8 @@ function eliminarPersonas ()
 //Realiza la cuenta y ,muestra la cotizacion
 function mostrarResultados(presupuesto)
 {   
-    $("#resultado").empty()
-                   .css('display','none')
+    $("#resultado").css('display','none')
+                   .empty()
                    .delay(5000)
                    .append(`<div class=" container row">
                                 <div class="col-6">

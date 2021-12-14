@@ -63,13 +63,16 @@ const listadoDesplegables = [
     Elegí tu grupo familiar y cotizá la mejor cobertura médica prepaga.
     <br>
     Te contactaremos a la brevedad para ayudarte en lo que necesites.
+        <div class="campaniaBoton">
+            <a href="#planes" class="btn btn-primary">Ir</a>
+        </div>
     </div>
 </div>`
 ]
 const listadoPlanes = [
     {
         idPlan: 510,
-        valorPlan: 1000,
+        valorPlan: 9000,
         descripcionPlan: "sasas"
     },
     {
@@ -84,7 +87,7 @@ const listadoPlanes = [
     },
     {
         idPlan: 210,
-        valorPlan: 300,
+        valorPlan: 3000,
         descripcionPlan: "sasas"
     },
 ]

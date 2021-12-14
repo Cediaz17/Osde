@@ -14,23 +14,17 @@
     margin: 15px;
     width: auto;
     height: 42px;
-    color: #00548E;
-    font-family: 'MuseoSans300'!important;
-    font-size: 18px;
-    line-height: 15px;
 }
 .navegador li a 
 {
     position: relative;
     display: block;
-    height: 20px;
     color: #777777;
     font-size: 23px;
     line-height: 20px;
     padding: 31px 25px !important;
     border-right: none;
     font-family: MuseoSans500;
-    letter-spacing: -0.4px;
 }
 .home{
     background-color: #f0f4f5;
@@ -67,8 +61,8 @@
 }
 .quienesSomos_Parafo
 {
-    line-height: 1;
-    margin-top: 10%;
+    line-height: 24px;
+    margin-top: 12%;
     margin-left: 45%;
 }
 .quienesSomos_Parafo p
@@ -190,7 +184,6 @@
     width: 90%;
     min-width: 1025px;
     max-width: 2000px;
-    overflow: hidden;
 }
 .inicio_Subtitulo
 {
@@ -204,10 +197,7 @@
     display: none;
 }
 
-.cotizacion
-{
-    visibility: hidden;
-}
+
 .cotizacion p
 {   
     margin: 30px;
@@ -217,7 +207,7 @@
 
 .logo
 { 
-        background: url(/img/logo.svg) no-repeat transparent scroll;
+        background: url(./img/logo.svg) no-repeat transparent scroll;
         position: relative;
         display: block;
         float: left;
@@ -266,6 +256,10 @@
     margin-bottom: 1rem;
     padding: 20px;
 }
+.cotizacion
+{
+    display: none;
+}
 .formularioDisenioExtra
 {
     border: solid 4px #ced6d5;
@@ -279,7 +273,8 @@
 /********************* campanias*************************/
 .campanias{
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
 }
 .campaniaBoton
 {
@@ -299,7 +294,7 @@
 }
 .planes
 {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 .planTitulo
 {
